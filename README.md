@@ -51,7 +51,6 @@ O simulador permite que os usuários compreendam como variáveis ambientais (tem
 
 ## 📝 Notas
 
-- O arquivo `imagem-agrinho.jpg` pode ser adicionado à mesma pasta para aparecer na seção "Sobre o Agrinho"
 - Todo o código está otimizado e sem erros de sintaxe
 
 ## 📚 Referências
