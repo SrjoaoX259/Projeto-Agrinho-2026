@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estufa Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🍅 AgroTech Estufa</div>
+        <ul class="menu">
+            <li><button onclick="mudarPagina('simulador')">Simulador</button></li>
+            <li><button onclick="mudarPagina('sobre-mim')">Sobre Mim</button></li>
+            <li><button onclick="mudarPagina('agrinho')">Sobre o Agrinho</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="simulador" class="pagina ativa">
+            <h2>Simulador de Estufa de Tomate</h2>
+            <p>Ajuste os controles abaixo para encontrar o equilíbrio perfeito e faça seu tomateiro crescer forte e saudável!</p>
+            
+            <div class="painel-controle">
+                <div class="controle">
+                    <label>Temperatura: <span id="temp-valor">25</span>°C</label>
+                    <input type="range" id="temperatura" min="10" max="40" value="25">
+                    <small>Ideal: 18°C a 28°C</small>
+                </div>
+                
+                <div class="controle">
+                    <label>Umidade do Ar: <span id="umi-ar-valor">65</span>%</label>
+                    <input type="range" id="umidade-ar" min="20" max="100" value="65">
+                    <small>Ideal: 60% a 80%</small>
+                </div>
+
+                <div class="controle">
+                    <label>Umidade do Solo: <span id="umi-solo-valor">70</span>%</label>
+                    <input type="range" id="umidade-solo" min="10" max="100" value="70">
+                    <small>Ideal: 60% a 70%</small>
+                </div>
+            </div>
+
+            <div class="estufa-visual">
+                <h3>Dia da Plantação: <span id="dia-contador">0</span></h3>
+                <div id="status-planta" class="planta">🟫 (Semente plantada)</div>
+                <div id="mensagem-alerta" class="alerta">Condições iniciais boas! Avance o tempo.</div>
+                
+                <div class="barra-progresso-container">
+                    <div id="barra-crescimento"></div>
+                </div>
+                <p>Crescimento: <span id="crescimento-porcentagem">0</span>%</p>
+                
+                <button id="btn-avancar" onclick="avancarDia()">Avançar 1 Dia ☀️</button>
+                <button id="btn-resetar" onclick="resetarSimulador()" style="background-color: #e74c3c;">Começar de Novo 🔄</button>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="pagina">
+            <h2>Sobre Mim</h2>
+            <div class="card">
+                <p><strong>Olá! Sou aluno(a) do 3° ano do Ensino Médio.</strong></p>
+                <p>Sou apaixonado(a) por tecnologia e agricultura. Desenvolvi este projeto para mostrar que, com conhecimento e ferramentas certas, podemos produzir mais e com melhor qualidade, respeitando os limites da natureza.</p>
+                <p>Acredito que o jovem no campo tem o poder de revolucionar a agricultura sustentável no Brasil.</p>
+            </div>
+        </section>
+
+        <section id="agrinho" class="pagina">
+            <h2>Agrinho 2026</h2>
+            <div class="card">
+                <h3>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h3>
+                <p>O Programa Agrinho é o maior programa de responsabilidade social do Sistema FAEP/SENAR-PR. Ele leva para as escolas propostas pedagógicas baseadas em sustentabilidade, cidadania e inovação no campo.</p>
+                <p>Este simulador foi criado para representar na prática o tema deste ano, provando que o controle ambiental preciso (temperatura e água) gera uma produção forte sem desperdício de recursos naturais.</p>
+                
+                <div class="imagem-placeholder">
+                    <img src="imagem-agrinho.jpg" alt="Logo do Concurso Agrinho 2026" style="max-width: 100%; border-radius: 8px;">
+                    <p><em>(Coloque a imagem 'imagem-agrinho.jpg' na mesma pasta dos arquivos para ela aparecer aqui)</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
