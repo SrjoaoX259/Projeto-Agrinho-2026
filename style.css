@@ -174,12 +174,3 @@ button:hover {
     line-height: 1.6;
     margin-bottom: 20px;
 }
-
-.imagem-placeholder {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background: #eee;
-    border: 1px dashed #ccc;
-    border-radius: 5px;
-}
